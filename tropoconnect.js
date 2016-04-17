@@ -71,7 +71,7 @@ postMessage = function (dest, msg) {
         execCurl(formatCurl("messages", key, [dest, "text='" + encodeURI(msg) + "'"], "POST"));
     }
     //execCurl(personId("", "shanemendez223@gmail.com"));
-postMessage("roomId='" + findRoomId("testet") + "'", "DUDE! THIS IS FROM MY NODE SERVER!");
+    //postMessage("roomId='" + findRoomId("testet") + "'", "DUDE! THIS IS FROM MY NODE SERVER!");
 
 
 
