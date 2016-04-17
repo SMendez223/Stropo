@@ -5,7 +5,7 @@ var app = express();
 
 
 app.get('/text', function (req, res) {
-    fs.writeFileSync(req);
+    fs.writeFileSync("./tropoinfo", req.body, "w");
     res.sendFile(__dirname + "/index.html");
 });
 
