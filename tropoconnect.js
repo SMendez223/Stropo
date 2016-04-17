@@ -87,7 +87,6 @@ var express = require("express");
 var fs = require("fs");
 var app = express();
 
-express.use(express.bodyParser())
 app.post('/text', function (req, res) {
     console.log(req.body);
     fs.writeFileSync("./tropoinfo", JSON.stringify(req));
