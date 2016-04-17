@@ -89,7 +89,7 @@ var app = express();
 
 
 app.post('/text', function (req, res) {
-    fs.writeFileSync("./tropoinfo", req.body);
+    fs.writeFileSync("./tropoinfo", req);
 });
 
 app.listen(3000, function () {
